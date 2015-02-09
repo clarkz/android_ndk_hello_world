@@ -17,8 +17,10 @@ APP_ABI := armeabi
 2. re-run:
 ndk-build V=1
 
-create “jniLibs” the same level as java
+3. create “jniLibs” the same level as java
 copy the folders generated in #1, #2 (in libs) to “jniLibs”
 
-remove the jni folder, so it won’t compile it.
+4. remove the jni folder, so it won’t compile it.
+
+please be aware that, in this project, #4 was skipped. so the jni is still there. but we still had to do #3. because after compile, the library (*.so file) couldn't be found in the project folder.
 
